@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ink-omodo | Playeras Personalizadas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      color: #e91e63;
+    }
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #e91e63;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1600185365228-6d7b6f3d5986?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      max-width: 90%;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #e91e63;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f9f9f9;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      text-align: center;
+    }
+    .product p {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .contact {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    .contact a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #000;
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ink-omodo</h1>
+    <p>Playeras personalizadas sin censura</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Exprésate sin miedo. Viste lo que piensas.</h2>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Nuestros diseños</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Playera Rebelde">
+        <h3>Diseño Rebelde</h3>
+        <p>$250 MXN</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520975979642-7f678b6cc9f0" alt="Orgasm Donor">
+        <h3>Orgasm Donor</h3>
+        <p>$280 MXN</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Diseño Personalizado">
+        <h3>Tu Propio Diseño</h3>
+        <p>Desde $200 MXN</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">Somos una marca mexicana irreverente que transforma tus ideas, frases y memes en playeras de calidad profesional con impresión DTF. En Ink-omodo creemos que la ropa debe decir lo que tú piensas. Cada diseño es una declaración. Cada playera, una risa.</p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <p>📍 Acuña, Coahuila<br>
+       📱 <a href="https://wa.me/528772370675?text=Hola%20quiero%20una%20cotización%20para%20una%20playera%20personalizada" target="_blank">Envíanos un WhatsApp</a><br>
+       📧 ink.omodo.mx@gmail.com</p>
+    <p>Síguenos en redes:</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">TikTok</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ink-omodo. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
