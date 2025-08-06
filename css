@@ -1,11 +1,14 @@
 .lang-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 14px;
+    text-align: right;
+    margin: 10px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
 }
 .lang-switch a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 5px;
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.lang-switch a:hover {
+    text-decoration: underline;
 }
