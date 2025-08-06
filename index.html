@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,82 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ink-omodo | Playeras Personalizadas</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
     body {
       margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
       color: #222;
     }
     header {
-      background: #000;
+      background: #111;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 1.5rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    header p {
-      margin-top: 0.5rem;
-      color: #e91e63;
-    }
     nav {
-      background: #111;
+      background: #e91e63;
       text-align: center;
-      padding: 0.5rem 0;
     }
     nav a {
       display: inline-block;
-      margin: 0 1rem;
+      padding: 1rem 1.5rem;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
     }
     nav a:hover {
-      color: #e91e63;
+      background: #c2185b;
     }
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('https://images.unsplash.com/photo-1600185365228-6d7b6f3d5986?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      height: 70vh;
+      background: url('https://images.unsplash.com/photo-1600185365228-6d7b6f3d5986') center/cover no-repeat;
+      height: 400px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
+      text-shadow: 0 2px 6px #000;
       text-align: center;
     }
     .hero h2 {
       font-size: 3rem;
-      max-width: 90%;
     }
     .section {
       padding: 3rem 2rem;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: auto;
     }
-    .section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #e91e63;
-    }
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
+      justify-content: center;
     }
     .product {
-      border-radius: 12px;
+      width: 280px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
       overflow: hidden;
-      background: #f9f9f9;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .product:hover {
-      transform: scale(1.02);
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .product img {
       width: 100%;
@@ -89,12 +74,7 @@
       object-fit: cover;
     }
     .product h3 {
-      margin: 1rem 0 0.5rem;
-      text-align: center;
-    }
-    .product p {
-      text-align: center;
-      margin-bottom: 1rem;
+      margin: 0.5rem 0;
     }
     .contact {
       background: #111;
@@ -108,37 +88,18 @@
       font-weight: bold;
     }
     footer {
-      background: #000;
-      color: #999;
+      background: #333;
+      color: #aaa;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
     }
-    .lang-switch {
-    text-align: right;
-    margin: 10px 20px;
-    font-size: 14px;
-    font-family: sans-serif;
-}
-.lang-switch a {
-    color: #000;
-    text-decoration: none;
-    margin: 0 5px;
-}
-.lang-switch a:hover {
-    text-decoration: underline;
-}
   </style>
 </head>
 <body>
-     <div class="lang-switch">
-      <a href="index.html">Español</a> | <a href="en.html">English</a>
-      </div>
+
   <header>
     <h1>Ink-omodo</h1>
-    <p>Playeras personalizadas sin censura</p>
-     
-  <h1>Ink-omodo</h1>
+    <p>Playeras personalizadas con actitud</p>
   </header>
 
   <nav>
@@ -147,28 +108,26 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section class="hero">
-    <h2>Exprésate sin miedo. Viste lo que piensas.</h2>
-    <p>Exprésate sin miedo. Viste lo que piensas.</p>
+  <div class="hero">
+    <h2>¡Exprésate con estilo!</h2>
   </div>
-  </section>
 
   <section id="productos" class="section">
     <h2>Nuestros diseños</h2>
     <div class="products">
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Playera Rebelde">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Playera 1">
         <h3>Diseño Rebelde</h3>
         <p>$250 MXN</p>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1520975979642-7f678b6cc9f0" alt="Orgasm Donor">
+        <img src="https://images.unsplash.com/photo-1520975979642-7f678b6cc9f0" alt="Playera 2">
         <h3>Orgasm Donor</h3>
         <p>$280 MXN</p>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Diseño Personalizado">
-        <h3>Tu Propio Diseño</h3>
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Playera 3">
+        <h3>Personaliza la tuya</h3>
         <p>Desde $200 MXN</p>
       </div>
     </div>
@@ -176,24 +135,24 @@
 
   <section id="nosotros" class="section">
     <h2>¿Quiénes somos?</h2>
-    <p style="max-width: 800px; margin: auto; text-align: center;">Somos una marca mexicana irreverente que transforma tus ideas, frases y memes en playeras de calidad profesional con impresión DTF. En Ink-omodo creemos que la ropa debe decir lo que tú piensas. Cada diseño es una declaración. Cada playera, una risa.</p>
+    <p>Ink-omodo nació con una misión: darle voz a tus ideas a través de ropa única, divertida y sin censura. Somos un negocio local con pasión por el diseño gráfico, la impresión DTF, y el humor irreverente. Cada camiseta cuenta una historia — la tuya.</p>
   </section>
 
   <section id="contacto" class="contact">
     <h2>Contáctanos</h2>
     <p>📍 Acuña, Coahuila<br>
-       📱 <a href="https://wa.me/528772370675?text=Hola%20quiero%20una%20cotización%20para%20una%20playera%20personalizada" target="_blank">Envíanos un WhatsApp</a><br>
-       📧 ink.omodo.mx@gmail.com</p>
+       📱 <a href="https://wa.me/5211234567890" target="_blank">WhatsApp: 123-456-7890</a><br>
+       📧 ink.omodo@gmail.com</p>
     <p>Síguenos en redes:</p>
     <p>
-      <a href="https://www.instagram.com/ink.omodo.mx/" target="_blank">Instagram</a> | 
-      <a href="https://www.facebook.com/profile.php?id=61578369191786" target="_blank">Facebook</a> | 
-      <a href="#" target="_blank">TikTok</a>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">TikTok</a>
     </p>
   </section>
 
   <footer>
-    &copy; 2025 Ink-omodo. Todos los derechos reservados.
+    <p>&copy; 2025 Ink-omodo. Todos los derechos reservados.</p>
   </footer>
 
 </body>
