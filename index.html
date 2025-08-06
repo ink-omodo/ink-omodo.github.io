@@ -1,74 +1,215 @@
-**caballero.html**
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Caballero | Ink-Omodo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ink-omodo | Playeras Personalizadas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #e91e63;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      padding: 1rem 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #c2185b;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #e91e63, #f06292);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .hero .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: white;
+      color: #e91e63;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #ffc1e3;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product {
+      width: 280px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    .product a {
+      display: block;
+      background: #e91e63;
+      color: white;
+      padding: 0.8rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .product a:hover {
+      background: #c2185b;
+    }
+    .contact {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    .contact a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #333;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Caballero</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="personalizados.html">Personalizados</a>
-    </nav>
+    <h1>Ink-omodo</h1>
+    <p>Playeras personalizadas con actitud</p>
   </header>
-  <main>
-    <section class="productos">
-      <h2>Productos para Caballero</h2>
-      <div class="producto">
-        <a href="producto.html">
-          <img src="images/shirt1.jpg" alt="Camiseta 1">
-          <p>Frase Loca #1</p>
-        </a>
+
+  <nav>
+    <a href="#caballero">Caballero</a>
+    <a href="#dama">Dama</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="personalizados.html">Personalizados</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Elige tu estilo</h2>
+    <div class="btn-group">
+      <a href="#caballero" class="btn">Caballero</a>
+      <a href="#dama" class="btn">Dama</a>
+    </div>
+  </div>
+
+  <section id="caballero" class="section">
+    <h2>Caballero</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Playera Rebelde">
+        <h3>Diseño Rebelde</h3>
+        <p>$250 MXN</p>
+        <a href="producto1.html">Ver más</a>
       </div>
-      <!-- Más productos -->
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section id="dama" class="section">
+    <h2>Dama</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520975979642-7f678b6cc9f0" alt="Playera Orgasm Donor">
+        <h3>Orgasm Donor</h3>
+        <p>$280 MXN</p>
+        <a href="producto2.html">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Ink-omodo nació con una misión: darle voz a tus ideas a través de ropa única, divertida y sin censura. Somos un negocio local con pasión por el diseño gráfico, la impresión DTF, y el humor irreverente. Cada camiseta cuenta una historia — la tuya.</p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <p>📍 Acuña, Coahuila<br>
+       📱 <a href="https://wa.me/5211234567890" target="_blank">WhatsApp: 123-456-7890</a><br>
+       📧 ink.omodo@gmail.com</p>
+    <p>Síguenos en redes:</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">TikTok</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ink-omodo. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5211234567890" target="_blank" class="whatsapp-float" title="Envíanos un mensaje">
+    💬
+  </a>
+
 </body>
 </html>
-```
-
-**dama.html**
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Dama | Ink-Omodo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Dama</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="personalizados.html">Personalizados</a>
-    </nav>
-  </header>
-  <main>
-    <section class="productos">
-      <h2>Productos para Dama</h2>
-      <div class="producto">
-        <a href="producto.html">
-          <img src="images/shirt2.jpg" alt="Camiseta 2">
-          <p>Frase Loca #2</p>
-        </a>
-      </div>
-      <!-- Más productos -->
-    </section>
-  </main>
-</body>
-</html>
-```
-
-**personalizados.html**
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Personalizados | Ink-Omodo</title>
-  <link rel="
