@@ -1,174 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ink-omodo | Playeras Personalizadas</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fdfdfd;
-      color: #222;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      background: #e91e63;
-      text-align: center;
-    }
-    nav a {
-      display: inline-block;
-      padding: 1rem 1.5rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background: #c2185b;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1600185365228-6d7b6f3d5986') center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 0 2px 6px #000;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 3rem;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .product {
-      width: 280px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .product img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-    .product h3 {
-      margin: 0.5rem 0;
-    }
-    .contact {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-    }
-    .contact a {
-      color: #e91e63;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      background: #333;
-      color: #aaa;
-      text-align: center;
-      padding: 1rem;
-    }
-    body {
-    background-image: url('https://github.com/user-attachments/assets/f92b74e2-85d5-4cb1-9d4b-74da686bd688');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    background-attachment: fixed;
-    background-color: #fff; /* Cambia a negro o gris si el logo es blanco */
-  }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ink-Omodo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div style="text-align:right; margin:10px; font-size:14px;">
-  <a href="/en/">English</a>
-</div>
-  <header>
-    <img src="https://github.com/user-attachments/assets/373009f8-ee63-4b5b-9315-46b368692ba6" 
-       alt="Ink-omodo Cover Banner" 
-       style="width: 100%; height: auto;" />
-    <h1>Ink-omodo</h1>
-    <p>Playeras personalizadas con actitud</p>
-  </header>
-
-  <nav>
-    <a href="#productos">Productos</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <div class="hero">
-    <h2>¡Exprésate con estilo!</h2>
+  <div class="background">
+    <img src="images/logo.png" class="logo-bg" alt="Ink-Omodo Logo de fondo">
   </div>
 
-  <section id="productos" class="section">
-    <h2>Nuestros diseños</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Playera 1">
-        <h3>Diseño Rebelde</h3>
-        <p>$250 MXN</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1520975979642-7f678b6cc9f0" alt="Playera 2">
-        <h3>Orgasm Donor</h3>
-        <p>$280 MXN</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Playera 3">
-        <h3>Personaliza la tuya</h3>
-        <p>Desde $200 MXN</p>
-      </div>
+  <header>
+    <img src="images/banner.png" class="banner" alt="Banner Ink-Omodo" />
+    <h1>Ink-Omodo</h1>
+    <p class="tagline">Wear Your Madness. Print Your Truth.</p>
+    <div class="language-switch">
+      <a href="en/index.html">English</a>
     </div>
-  </section>
-
-  <section id="nosotros" class="section">
-    <h2>¿Quiénes somos?</h2>
-    <p>Ink-omodo nació con una misión: darle voz a tus ideas a través de ropa única, divertida y sin censura. Somos un negocio local con pasión por el diseño gráfico, la impresión DTF, y el humor irreverente. Cada camiseta cuenta una historia — la tuya.</p>
-  </section>
-
-  <section id="contacto" class="contact">
-    <h2>Contáctanos</h2>
-    <p>📍 Acuña, Coahuila<br>
-       📱 <a href="https://wa.me/528772370675?text=Hola%20quiero%20una%20cotización%20para%20una%20playera%20personalizada" target="_blank">
-   WhatsApp: 877-237-0675</a>
-      <br>
-       📧 ink.omodo@gmail.com</p>
-    <p>Síguenos en redes:</p>
-    <p>
-       <a href="https://www.instagram.com/ink.omodo.mx/" target="_blank">Instagram</a> | 
-  <a href="https://www.facebook.com/profile.php?id=61578369191786" target="_blank">Facebook</a> | 
-  <a href="#" target="_blank">TikTok</a>
-    </p>
-  </section>
+  </header>
 
   <footer>
-    <p>&copy; 2025 Ink-omodo. Todos los derechos reservados.</p>
+    <p>Contáctanos vía <a href="https://wa.me/528772370675" target="_blank">WhatsApp</a> o síguenos en 
+      <a href="https://www.instagram.com/ink.omodo.mx/" target="_blank">Instagram</a> / 
+      <a href="https://www.facebook.com/profile.php?id=61578369191786" target="_blank">Facebook</a>
+    </p>
   </footer>
-
 </body>
 </html>
