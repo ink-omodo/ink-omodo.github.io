@@ -1,0 +1,11 @@
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
+.lang-switch a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 5px;
+}
